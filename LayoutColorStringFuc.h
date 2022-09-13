@@ -1,9 +1,9 @@
 //
 //  StringMacros.h
-//  taojiamao
+// 
 //
 //  Created by yueyu on 2018/4/26.
-//  Copyright © 2018年 yueyu. All rights reserved.
+//  Copyright © 2018年 kris. All rights reserved.
 //
 
 
