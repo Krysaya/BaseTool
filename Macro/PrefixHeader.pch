@@ -1,0 +1,63 @@
+//
+//  PrefixHeader.pch
+//  ywt
+//
+//  Created by q on 2018/10/31.
+//  Copyright © 2018年 kris. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "LayoutColorStringFuc.h"
+
+#import "BaseModel.h"
+#import "BaseTools.h"
+#import "BaseButton.h"
+#import "BaseLabel.h"
+#import "BaseViewCell.h"
+#import "BaseNavTitleView.h"
+#import "BaseHandleCenter.h"
+#import "BaseNetWorking.h"
+#import "BaseViewController.h"
+#import "BaseNavigationController.h"
+
+#import "NSDictionary+SetNullStr.h"
+#import "XMNetworking.h"
+#import "MJExtension.h"
+#import "SVProgressHUD.h"
+//#import "XLSlideMenu.h"
+//#import "ZJScrollPageView.h"
+//#import "Masonry.h"
+#import "MJRefresh.h"
+#import "UIImage+JKColor.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+#import "BRPickerView.h"
+
+//static NSString * const RELOGIN_REFRENSH = @"notif_refrensh_vc";//刷新首页
+static NSString * const URL = @"http://cjkycs.whcx365.com/api/";
+//static NSString * const IP_URL = @"192.168.124.189:8526/";
+//xacx.hebywt.com
+//static NSString * const URL = @"http://82.156.19.225:8002/";
+//static NSString * const IP_URL = @"xacx.hebywt.com/";
+
+
+static NSString * const REFRENSH_TOKEN = @"refresh_token";
+static NSString * const ACCESS_TOKEN = @"access_token";
+static NSString * const EXPIRES_IN = @"expires_in";//剩余时间
+
+static NSString * const IS_LOGIN = @"is_login";//
+
+
+static NSString * const UserInfoDictionary = @"userinfoDict";//用户信息
+static NSString * const UserButtonsArr = @"userButtonArr";//按钮权限
+
+
+
+/*通知宏000000000000*/
+
+static NSString * const NFC_ISRELOGIN = @"notif_isRelogin";//
+
+
+#endif /* PrefixHeader_pch */

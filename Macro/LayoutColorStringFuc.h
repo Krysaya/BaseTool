@@ -1,9 +1,9 @@
 //
 //  StringMacros.h
-// 
+//  taojiamao
 //
 //  Created by yueyu on 2018/4/26.
-//  Copyright © 2018年 kris. All rights reserved.
+//  Copyright © 2018年 yueyu. All rights reserved.
 //
 
 
@@ -21,12 +21,11 @@
 #define ssRGBHexAlpha(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
 
 //主色4A8AFF
-#define KALLRGB ssRGBHex(0xFF4D47)
-#define KNAVRGB ssRGBHex(0x4A8AFF)
-#define KQDRGB ssRGBHex(0x43668A)
+#define KALLRGB    ssRGBHex(0x3896FF)
 
 //背景
 #define KBGRGB     [UIColor colorWithRed:248/255.0 green:248/255.0 blue:248/255.0 alpha:1.0]
+#define KFONTRGB     [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1.0]
 
 #define KBlueRGB   [UIColor colorWithRed:54/255.0 green:116/255.0 blue:255/255.0 alpha:1.0]
 #define KRedRGB    [UIColor colorWithRed:206/255.0 green:50/255.0 blue:52/255.0 alpha:1.0]
@@ -63,13 +62,13 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 // 适配刘海屏状态栏高度
 #define SafeAreaStatusBarHeight (iPhoneX ? 44.f : 20.f)
 // 适配iPhone X 导航栏高度
-#define SafeAreaTopHeight       (iPhoneX ? 84.f : 64.f)
+#define SafeAreaTopHeight       (iPhoneX ? 88.f : 64.f)
 
 
 // 适配iPhone X Tabbar距离底部的距离
 #define SafeAreaBottomMargin    (iPhoneX ? 34.f : 0.f)
 
-#define S_H  SreenH - SafeAreaBottomMargin-50
+#define S_H  SreenH - SafeAreaBottomMargin
 
 //#define BottmHeight
 //检测程序是在真机上还是在模拟器上
@@ -89,10 +88,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 #define STRONG  @strongify(self);
 
 
+//当前版本
 
-/** 程序版本号 */
-
-#define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define Version  [(__bridge NSDictionary *)CFBundleGetInfoDictionary(CFBundleGetMainBundle())objectForKey:@"CFBundleShortVersionString"]
 
 //用户中心数据
 #define GetUserDefaults(a) [[NSUserDefaults standardUserDefaults] objectForKey:a]
